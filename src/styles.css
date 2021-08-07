@@ -97,15 +97,15 @@
       text-align: center;
       display: flex;
       flex-direction: column;
+      width: 100%;
       gap: 10px;
       top: 30%;
-      left: 30%;
+      left: 20%;
       transform: translate(-20%, -20%);
   }
 
   .hero__title {
       font-size: 2rem;
-
   }
 
   .hero__subtitle,
