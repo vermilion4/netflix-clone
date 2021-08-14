@@ -225,14 +225,15 @@
       max-height: 54%;
       z-index: -2;
   }
-  .feature2__bg__vid__container{
+
+  .feature2__bg__vid__container {
       position: absolute;
       top: 8%;
       left: 18%;
       width: 100%;
       height: 100%;
       max-width: 63%;
-    max-height: 64%;
+      max-height: 64%;
       z-index: -2;
   }
 
@@ -246,7 +247,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
-      max-width: 350px;
+      max-width: 430px;
       display: flex;
       align-items: center;
       background-color: #000;
@@ -270,14 +271,16 @@
   .poster__details {
       width: 60%;
       text-align: start;
-      
+
   }
-  .poster__details > h4{
+
+  .poster__details>h4 {
       font-size: 17px;
   }
-   .poster__details > h6{
+
+  .poster__details>h6 {
       font-size: 13px;
-      color: #1c77ff ;
+      color: #1c77ff;
   }
 
   .download_anime_container {
@@ -288,6 +291,75 @@
   .gif {
       width: 100%;
       height: 100%;
+  }
+
+  .faq__section{
+      border-top: 8px solid #222;
+      padding: 2rem 0;
+  }
+  .faq__head{
+      text-align: center;
+      margin: 1rem 3rem;
+      font-size: 1.8rem;
+      font-family: 'Netflix Sans Bold', sans-serif;
+  }
+  .faq__list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+  }
+  .faq__title{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 25px;
+      color: #fff;
+      background-color: #303030;
+      border: 1px solid #303030;
+      font-size: 18px;
+  }
+  .faq__visible{
+      background-color: #303030;
+      border-top: 1px solid #000;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .5s ease-in-out;
+  }
+  .faq__visible > p{
+      margin : 1rem;
+      font-size: 18px;
+  }
+  .faq__email{
+      text-align: center;
+      margin-top: 1rem;
+  }
+  .faq__description{
+      margin: 5px 50px;
+  }
+  footer{
+      border-top: 8px solid #333;
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      color: #757575;
+      gap: 20px;
+  }
+  .footer__row__1{
+      font-size: 18px;
+  }
+
+  .footer__row__2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+  }
+  .col{
+      width: 45%;
+      line-height: 2rem;
+      font-size: 14px;
   }
 
   @media (min-width: 768px) {
@@ -355,12 +427,31 @@
       .feature__subtitle {
           letter-spacing: 0.1rem;
       }
-
+      .faq__title{
+          font-size: 20px;
+      }
+      .faq__head{
+          font-size: 38px;
+          letter-spacing: 1px;
+      }
+      .faq__list{
+      padding: 1rem 5rem;
+      }
+      footer{
+          padding: 4rem;
+      }
+      .footer__row__2{
+      flex-wrap: nowrap;
+  }
   }
 
   @media (min-width: 1024px) {
       .navbar {
           padding: 1% 4%;
+      }
+
+      .navbar__brand {
+          width: 180px;
       }
 
       .hero__card {
@@ -402,7 +493,7 @@
           justify-content: space-between;
           gap: 30px;
           text-align: start;
-          padding: 0 6rem;
+          padding: 0 .2rem;
       }
 
       .feature__image__container {
@@ -412,8 +503,43 @@
       .row__reverse {
           flex-direction: row-reverse;
       }
+        .feature2__poster__container {
+          max-width: 250px;
+          height: 50px;
+      }
+
+      .poster__container {
+          height: 30px;
+      }
+      .faq__section{
+      padding: 3rem 0;
+  }
+      .faq__head{
+          font-size: 48px;
+      }
+      .faq__title{
+          font-size: 27px;
+      }
+      .faq__list{
+      padding: 1rem 10rem;
+      }
+      footer{
+          padding: 5rem 8rem;
+      }
 
   }
 
 
-  @media (min-width: 1254px) {}
+  @media (min-width: 1254px) {
+        .feature2__poster__container {
+          max-width: 350px;
+          height: 80px;
+      }
+
+      .poster__container {
+          height: 50px;
+      }
+      footer{
+          padding: 5rem 12rem;
+      }
+  }
